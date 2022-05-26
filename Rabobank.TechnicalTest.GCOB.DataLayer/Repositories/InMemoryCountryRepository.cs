@@ -28,6 +28,14 @@ namespace Rabobank.TechnicalTest.GCOB.DataLayer.Repositories
             return Task.FromResult(Countries[identity]);
         }
 
+        public Task<Country> FindAsync(string countryName)
+        {
+            _logger.LogDebug($"Get Country with name {countryName}");
+
+            var result = Countries.FirstOrDefault(country => String.Equals(country.Value.Name, countryName, StringComparison.CurrentCultureIgnoreCase));
+            return Task.FromResult(result.Value);
+        }
+
         public Task<IEnumerable<Country>> GetAllAsync()
         {
             _logger.LogDebug($"Get all Countries");

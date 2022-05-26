@@ -7,5 +7,7 @@ namespace Rabobank.TechnicalTest.GCOB.DataLayer.Repositories
     {
         Task<Country> GetAsync(int identity);
         Task<IEnumerable<Country>> GetAllAsync();
+
+        Task<Country> FindAsync(string countryName);
     }
 }

@@ -14,13 +14,13 @@ namespace Rabobank.TechnicalTest.GCOB.DataLayer.Repositories
             _logger = logger;
         }
 
-        public async Task<int> GenerateIdentityAsync()
+        public Task<int> GenerateIdentityAsync()
         {
             _logger.LogDebug("Generating Address identity");
-            if (Addresses.Count == 0) return 1;
+            if (Addresses.Count == 0) return Task.FromResult(1);
 
             var x = Addresses.Values.Max(c => c.Id);
-            return ++x;
+            return Task.FromResult(++x);
         }
 
         public async Task<Address> GetAsync(int identity)

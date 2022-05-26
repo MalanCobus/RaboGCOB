@@ -46,10 +46,10 @@ namespace Rabobank.TechnicalTest.GCOB
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                app.UseSwagger();
                 app.UseSwaggerUI();
             }
 
+            app.UseSwagger();
             app.UseHttpsRedirection();
 
             app.UseRouting();
