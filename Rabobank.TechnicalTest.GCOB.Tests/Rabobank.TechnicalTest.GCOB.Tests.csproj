@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
+    <PackageReference Include="Moq" Version="4.18.1" />
+    <PackageReference Include="MSTest.TestAdapter" Version="2.1.0" />
+    <PackageReference Include="MSTest.TestFramework" Version="2.1.0" />
+    <PackageReference Include="coverlet.collector" Version="1.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Rabobank.TechnicalTest.GCOB.Api.Models\Rabobank.TechnicalTest.GCOB.Api.Models.csproj" />
+    <ProjectReference Include="..\Rabobank.TechnicalTest.GCOB.Commands.Handlers\Rabobank.TechnicalTest.GCOB.Commands.Handlers.csproj" />
+    <ProjectReference Include="..\Rabobank.TechnicalTest.GCOB.Commands\Rabobank.TechnicalTest.GCOB.Commands.csproj" />
+    <ProjectReference Include="..\Rabobank.TechnicalTest.GCOB.DataLayer\Rabobank.TechnicalTest.GCOB.DataLayer.csproj" />
+    <ProjectReference Include="..\Rabobank.TechnicalTest.GCOB.Queries.Handlers\Rabobank.TechnicalTest.GCOB.Queries.Handlers.csproj" />
+    <ProjectReference Include="..\Rabobank.TechnicalTest.GCOB.Queries\Rabobank.TechnicalTest.GCOB.Queries.csproj" />
+    <ProjectReference Include="..\Rabobank.TechnicalTest.GCOB\Rabobank.TechnicalTest.GCOB.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Rabobank.TechnicalTest.GCOB.Api.Models\Rabobank.TechnicalTest.GCOB.Api.Models.csproj" />
+    <ProjectReference Include="..\Rabobank.TechnicalTest.GCOB.Commands\Rabobank.TechnicalTest.GCOB.Commands.csproj" />
+    <ProjectReference Include="..\Rabobank.TechnicalTest.GCOB.DataLayer\Rabobank.TechnicalTest.GCOB.DataLayer.csproj" />
+  </ItemGroup>
+
+</Project>

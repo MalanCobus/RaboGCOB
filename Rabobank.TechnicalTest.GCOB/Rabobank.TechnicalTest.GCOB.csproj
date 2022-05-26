@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.3.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="6.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Rabobank.TechnicalTest.GCOB.Api.Models\Rabobank.TechnicalTest.GCOB.Api.Models.csproj" />
+    <ProjectReference Include="..\Rabobank.TechnicalTest.GCOB.Commands.Handlers\Rabobank.TechnicalTest.GCOB.Commands.Handlers.csproj" />
+    <ProjectReference Include="..\Rabobank.TechnicalTest.GCOB.Queries.Handlers\Rabobank.TechnicalTest.GCOB.Queries.Handlers.csproj" />
+  </ItemGroup>
+
+
+</Project>
